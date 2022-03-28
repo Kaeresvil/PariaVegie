@@ -1,0 +1,7 @@
+{
+  "name": "PariaVegie",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

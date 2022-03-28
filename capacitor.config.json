@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "PariaVegie",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
