@@ -1,9 +1,7 @@
 <template>
      <ion-img class="logo" src="../../assets/veg.png"></ion-img>
            <i><h3>VegieTools</h3></i>
-           <h4>Bitter Gourd and Paria</h4>
-
-           
+           <h4>Bitter Gourd and Paria</h4>       
 </template>
 
 <script>

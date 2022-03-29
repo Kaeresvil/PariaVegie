@@ -28,16 +28,6 @@ export default defineComponent({
     return{
       show: true
     }
-  }, methods: {
-    selectMenu(){
-      this.show = !this.show
-    },
-    selectback(){
-      this.show = !this.show
-    },
-    h5p(){
-      this.$router.push('/h5p')
-    }
   }
   
 });

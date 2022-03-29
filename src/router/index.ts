@@ -5,6 +5,7 @@ import CateGory from '../views/ViewCategory.vue'
 import H5P from '../views/H5Pstandalone.vue'
 import Splash from '../views/Splash.vue'
 import SliderPage from '../views/slider.vue'
+import MoreContent from '../views/moreContent.vue'
 
 
 
@@ -39,6 +40,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/home/h5p',
     name: 'H5Pstandalone',
     component: H5P
+  }, 
+ {
+    path: '/home/morecontent',
+    name: 'moreContent',
+    component: MoreContent
   }, 
 ]
 

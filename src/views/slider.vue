@@ -10,7 +10,7 @@
     @slideChange="onSlideChange"
   >
   <!-- slide for first page -->
-        <swiper-slide class="page1">
+        <swiper-slide>
     <Splash/> 
         </swiper-slide>
 
@@ -36,8 +36,6 @@ import HomePage from './HomePage.vue'
 
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import '@ionic/vue/css/ionic-swiper.css';
 export default defineComponent({
      name: 'SliderPage',
@@ -54,11 +52,11 @@ export default defineComponent({
       
       const onSlideChange = (swiper) => {
         swiper.autoplay.running = false;
-        console.log(swiper.activeIndex);
+
          if (swiper.activeIndex == 1){
         swiper.allowSlideNext = false;
         swiper.allowSlidePrev = true;
-        console.log(swiper.allowSlidePrev)
+  
       }else if(swiper.activeIndex == 0){
          swiper.allowSlideNext = true;
          swiper.allowSlidePrev = false;
@@ -74,9 +72,5 @@ export default defineComponent({
 <style scoped>
 .slidePage{
     height: 100%;
-}
-.page1{
-    background-color: #0c4b05;
-    color: white;
 }
 </style>

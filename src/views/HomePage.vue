@@ -20,7 +20,7 @@
              <Transition name="fade"> 
              <div v-if="hideCat" class="viewCategory">
               
-                <ViewCategory/>
+                <ViewCategory :language="isEnglish"/>
                
             </div>
              </Transition>
@@ -43,14 +43,10 @@
 
              </div> 
 
-       <div v-if="hideFooter" class="footer">
-           <div v-if="hideAbout" class="grid-item">
+       <div class="footer">
+           <div class="grid-item">
                 <ion-icon  @click="aboutClick" class="footerbtn" src="../../assets/svg/info.svg"></ion-icon>
                  <p  @click="aboutClick" >About</p>
-            </div>
-           <div v-if="hideBack" class="grid-item">
-                <ion-icon @click="backClick" class="footerbtn" src="../../assets/svg/arrowBack.svg"></ion-icon>
-                 <p  @click="backClick" >Back</p>
             </div>
             <div class="grid-item">
                 <ion-icon @click="homeClick"  class="footerbtn" src="../../assets/svg/home.svg"></ion-icon>
@@ -87,30 +83,25 @@ export default {
   },
   data(){
       return{
-          show: true,
-          hide: false,
-          hideFooter: true,
           hideCat: false,
           hideAboutUs: false,
           hideCon: true,
-          hideAbout: true,
           hideClick: false,
-          isBackClicked: false,
           lang: false,
+          isEnglish: false,
       }
   }, methods:{
    
     
       categoryClick(){
         this.lang = true;
+        
       },
       homeClick(){
           this.hideCat = false;
         this.hideCon = true;
          this.hideAboutUs = false;
-        this.hideBack = false;
         this.lang = false;
-        this.hideAbout = true;
       },
       aboutClick(){
           this.hideAboutUs = true;
@@ -118,27 +109,28 @@ export default {
         this.hideCat = false;
         this.lang = false;
       },
-      backClick(){
-        this.hideCat = true;
-        this.hideBack = true;
-         this.hideAbout = false;
-         this.hideCon= false;
-         this.isBackClicked= true;
-        
-      },
       backMore(){
         this.lang = false;
       },
       eng(){
-       this.hideCat = true;
+        this.hideCat = false;
         this.hideCon = false;
-        this.hideAbout = false;
+        this.hideAboutUs = false;
         this.lang = false;
-        this.hideBack = true;
-         this.hideAboutUs = false;
+        this.isEnglish = true;
+        this.$nextTick(() => {
+        this.hideCat = true;
+        });
       },
       iloco(){
-       console.log("Kick")
+      this.hideCat = false;
+      this.hideCon = false;
+      this.hideAboutUs = false;
+      this.lang = false;
+      this.isEnglish = false;
+      this.$nextTick(() => {
+      this.hideCat = true;
+        });
       }
   }
   
@@ -157,10 +149,6 @@ export default {
   height: 100%;
   background: url("/public/assets/VegieTools.png"); 
   background-size:100% 100%;
-}
-.content{
-    height: calc(96vh - 151px);
-    position: relative;
 }
 .header{
     display:flex;
@@ -263,8 +251,8 @@ End of transition */
 
 
 .ex{
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
 }
 ion-content{ 
    --background: transparent;
@@ -272,13 +260,13 @@ ion-content{
 .navigation{
    border: 1px solid black;
   position: absolute;
-  width: 80%;
+  width: 85%;
   height: auto;
   top: 53%;  
   left: 50%; 
   transform: translate(-50%, -50%);                                 
-  background-color: #252525;
-  opacity: 0.96;
+  background-color: #161616;
+   opacity: .98;
   border-radius: 20px 20px;
 }
 
@@ -294,21 +282,22 @@ li{
 .backMore{
     position: absolute;
     border-radius: 50px 50px;
-    width: 48px;
-    height: 48px;
-    right: -15px;
-    top: -17px;
+    width: 42px;
+    height: 42px;
+    right: -17px;
+    top: -15px;
      z-index: 1;
      background-color: #0c4b05;
      text-align: center;
-     padding-top: 13px;
+     padding-top: 11px;
 
    
 }
 h5{
   color: white;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 900;
   font-family: 'Bebas Neue', sans-serif;
+  padding-top: 2px;
 }
 </style>
