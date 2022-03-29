@@ -135,7 +135,7 @@ ion-content{
 .navigation{
    border: 1px solid black;
   position: absolute;
-  width: 70%;
+  width: 75%;
   height: 50%;
   top: 53%;  
   left: 50%; 

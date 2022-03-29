@@ -13,9 +13,11 @@
        </div><!-- end of liner div -->
        
        <div class="content">
+           <Transition name="fade">
            <div v-if="hideCon">
            <HomeContent/>
            </div>
+            </Transition>
            
              <Transition name="fade"> 
              <div v-if="hideCat" class="viewCategory">
@@ -31,7 +33,7 @@
             </div>
               </Transition>
        </div><!-- end of content div -->
-
+        <Transition name="fade">
          <div v-if="lang" class="navigation">
              <h5>Select Language</h5>
            <ul>
@@ -42,7 +44,7 @@
               <div class="backMore"><ion-icon @click="backMore" src="../../assets/svg/cross.svg" class="ex"></ion-icon></div>
 
              </div> 
-
+        </Transition>
        <div class="footer">
            <div class="grid-item">
                 <ion-icon  @click="aboutClick" class="footerbtn" src="../../assets/svg/info.svg"></ion-icon>
@@ -54,7 +56,7 @@
             </div>
             <div  class="grid-item">
                 <ion-icon  @click="categoryClick" class="footerbtn" src="../../assets/svg/apps.svg"></ion-icon>
-                <p  @click="categoryClick" >Vegetable</p>
+                <p  @click="categoryClick" >Learn Now</p>
                 
             </div>
       </div> <!-- end of footer div -->
@@ -260,7 +262,7 @@ ion-content{
 .navigation{
    border: 1px solid black;
   position: absolute;
-  width: 85%;
+  width: 75%;
   height: auto;
   top: 53%;  
   left: 50%; 
@@ -295,7 +297,7 @@ li{
 }
 h5{
   color: white;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 900;
   font-family: 'Bebas Neue', sans-serif;
   padding-top: 2px;
