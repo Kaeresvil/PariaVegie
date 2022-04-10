@@ -34,7 +34,7 @@ export default defineComponent({
     return{
           content: '../workplace/Bitter Gourd/Bitter Gourd Desc',
           vegetableName: 'Bitter Gourd',
-          breadcrumbs: 'Bitter Gourd',
+          breadcrumbs: 'Description, Nutritive and Variety',
           showMore: true,
           keys: '1',
            clickShowMore: false,
@@ -46,7 +46,7 @@ export default defineComponent({
     return{
           content: '../workplace/Paria/Paria-Desc',
           vegetableName: 'Paria',
-          breadcrumbs: 'Paria',
+          breadcrumbs: 'Saguday ti Paria',
           showMore: true,
           keys: '2',
           clickShowMore: false,

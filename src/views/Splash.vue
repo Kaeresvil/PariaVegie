@@ -60,7 +60,7 @@ export default defineComponent({
   margin-right: auto;
 }
 .title{
-  max-width: 80%;
+  max-width: 95%;
   margin: 0 auto;
 }
 
