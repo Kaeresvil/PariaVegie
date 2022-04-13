@@ -1,11 +1,10 @@
 <template>
+    
 <div class="content">
- 
      <ion-img class="logo" src="../../assets/veg.png"></ion-img>
            <i><h3>VegieTools</h3></i>
-           <h4>Bitter Gourd and Paria</h4>   
-   </div> 
-    
+</div>
+
 </template>
 
 <script>
@@ -14,8 +13,13 @@
 export default {
      name: 'HomeContent',
    components: {
-    IonImg,
+    IonImg 
   },
+  data(){
+    return{
+        grid: true,
+    }
+  }
 }
 </script>
 
@@ -25,15 +29,17 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
 .content{
   text-align: center;
   position: absolute;
-  top: 27%;
+  top: 29%;
   left: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  width: 100%;
 }
 
 .logo{
@@ -43,17 +49,17 @@ export default {
   margin-right: auto;
 }
 h3{
-
 font-size: 78px;
 font-family: 'Barlow Condensed', sans-serif;
 font-weight: 1000;
-color:#0c4b05;
+color:#000000;
 }
 h4{
     font-size: 38px;
     font-family: 'Barlow Condensed', sans-serif;
     color:#000000;
 }
+
 
 /* 
 Responsive CSS */
@@ -86,7 +92,7 @@ h4{
 }
 
 .content{
-  top: 25%;
+  top: 28%;
 
 }
 h3{
@@ -105,7 +111,7 @@ h4{
 }
 
 .content{
-  top: 29%;
+  top: 31%;
 
 }
 h3{
@@ -178,5 +184,26 @@ h4{
 
 }
 
+/* landscpae responsive */
+
+@media only screen and (max-device-height : 450px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+.logo{
+  width: 150px;
+
+}
+
+.content{
+  top: 20%;
+
+}
+
+h3{
+font-size: 48px;
+}
+h4{
+    font-size: 23px;
+
+}
+}
 
 </style>

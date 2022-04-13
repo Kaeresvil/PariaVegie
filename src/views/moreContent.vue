@@ -135,7 +135,7 @@ ion-content{
 .navigation{
    border: 1px solid black;
   position: absolute;
-  width: 75%;
+  width: 80%;
   height: 50%;
   top: 53%;  
   left: 50%; 
@@ -167,6 +167,46 @@ li{
      padding-top: 12px;
 
    
+}
+
+@media only screen and (max-device-height : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+
+
+li{
+  font-size: 16px;
+}
+
+.backMore{
+    width: 43px;
+    height: 43px;
+     padding-top: 11px;
+
+   
+}
+ion-icon{ 
+    width: 22px;
+    height: 22px;
+}
+
+}
+
+@media only screen and (max-device-height : 450px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+
+li{
+  font-size: 16px;
+}
+
+.backMore{
+    width: 43px;
+    height: 43px;
+     padding-top: 11px;
+
+   
+}
+ion-icon{ 
+    width: 22px;
+    height: 22px;
+}
 }
 
 

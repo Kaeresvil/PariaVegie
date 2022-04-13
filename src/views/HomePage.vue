@@ -168,7 +168,8 @@ export default {
   padding: 5px ;
 }
 .logo1{
-    width: 65px;
+    width: 60px;
+    margin-top: 2px;
 }
 
 .grid-list{
@@ -198,11 +199,11 @@ h1{
 }
 h6{
     font-family: 'Bebas Neue', sans-serif;
-   font-size: 22px;
+   font-size: 18px;
    color:rgb(255, 255, 255);
    text-align: center;
    font-weight:800;
-   padding-top: 19px;
+   padding-top: 25px;
 
 }
 ion-icon{ 
@@ -268,13 +269,12 @@ ion-content{
   left: 50%; 
   transform: translate(-50%, -50%);                                 
   background-color: #161616;
-   opacity: .98;
   border-radius: 20px 20px;
 }
 
 li{
   font-family:  sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color:#e9e9e9;
   font-weight:600;
   padding: 18px;
@@ -297,9 +297,178 @@ li{
 }
 h5{
   color: white;
-  font-size: 27px;
+  font-size: 22px;
   font-weight: 900;
   font-family: 'Bebas Neue', sans-serif;
   padding-top: 2px;
+}
+
+
+/* 
+Responsive CSS */
+
+
+@media only screen and (max-device-height : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+.header{
+    height: 55px;
+}
+.liner{
+    height: 6px;
+}
+.logo1{
+    width: 43px;
+}
+h6{
+   font-size: 16px;
+  padding-top: 14px;
+}
+.footer{
+    height: 53px;
+}
+.footerbtn{ 
+    width: 25x;
+    height: 25px;
+}
+
+p{
+    font-size: 11px;
+}
+h5{
+  font-size: 20px;
+}
+
+
+li{
+  font-size: 17px;
+
+}
+
+}
+
+@media only screen and (min-device-height : 481px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+.logo{
+  width: 200px;
+
+}
+
+.content{
+  top: 25%;
+
+}
+h3{
+font-size: 63px;
+}
+h4{
+    font-size: 28px;
+
+}
+
+}
+@media only screen and (min-device-height : 850px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+.logo{
+  width: 250px;
+
+}
+
+.content{
+  top: 29%;
+
+}
+h3{
+font-size: 72px;
+}
+h4{
+    font-size: 35px;
+
+}
+
+}
+@media screen 
+  and (min-height: 1024px){
+.logo{
+  width: 300px;
+
+}
+
+.content{
+  top: 27%;
+
+}
+h3{
+font-size: 85px;
+}
+h4{
+    font-size: 45px;
+
+}
+
+}
+@media screen 
+  and (min-height: 1180px){
+.logo{
+  width: 420px;
+
+}
+
+.content{
+  top: 25%;
+
+}
+h3{
+font-size: 125px;
+}
+h4{
+    font-size: 55px;
+
+}
+
+}
+@media screen 
+  and (min-height: 1368px){
+.logo{
+  width: 450px;
+
+}
+
+.content{
+  top: 25%;
+
+}
+h3{
+font-size: 125px;
+}
+h4{
+    font-size: 55px;
+
+}
+}
+
+/* landscpae responsive */
+
+@media only screen and (max-device-height : 450px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+.header{
+    height: 50px;
+}
+.liner{
+    height: 6px;
+}
+.logo1{
+    width: 38px;
+}
+h6{
+   font-size: 17px;
+  padding-top: 8px;
+}
+.footer{
+    height: 50px;
+}
+.footerbtn{ 
+    width: 22x;
+    height: 22px;
+}
+
+p{
+    font-size: 11px;
+}
 }
 </style>

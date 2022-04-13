@@ -1,17 +1,14 @@
 <template >
-
+<div v-if="showMore" class="showMore"><ion-icon class="iconmenu" @click="showMoreBtn(vegetableName, vegetableid)" src="../../assets/svg/menu-burger.svg"></ion-icon>
+ </div>
   <div class="Catheader2">
-      <div class="head-grid">
-        <h6>{{vegetableName}}</h6>
-      </div>
       <div class="head-grid">
           <p class="breadcrumbs"><i>{{breadcrumbs}}</i></p>
       </div>   
         </div>
  <Vegetable v-if="contentShow" :content="content"  :num="count" class="content"/>
 
-<div v-if="showMore" class="showMore"><ion-icon class="iconplus" @click="showMoreBtn" src="../../assets/svg/plus.svg"></ion-icon>
- </div>
+
 
  <MoreView v-if="clickShowMore" :id="vegie" v-on:backtoShow="moreContentBack" v-on:existContent="hideExistContent"/>
 
@@ -92,7 +89,7 @@ methods: {
   box-sizing: border-box;
 }
 .content{
-     height: calc(96vh - 151px);
+     height: calc(96vh - 155px);
 }
 .Catheader2{
   border-radius: 10px 10px;
@@ -102,8 +99,6 @@ methods: {
   height: 1.75rem;
   transform: translate(+2.5%, +5px);
   margin-bottom: 10px;   
-  display: grid;
-  grid-template-columns: auto auto;
   
 }
 h6{
@@ -130,18 +125,51 @@ ion-content{
    --background: transparent;
  }
 .showMore{
-    position: absolute;
-    border-radius: 50px 50px;
-    width: 53px;
-    height: 53px;
-    right: 15px;
-    bottom: 93px;
-    z-index: 1;
-    background-color: #0c4b05;
-    padding-top: 10px; 
+  position: absolute;
+  right: 18px;
+  top: 20px;
 }
-ion-icon{ 
-    width: 33px;
-    height: 33px;
+.iconmenu{
+    width: 37px;
+    height: 37px;
+
+}
+
+/* 
+Responsive CSS */
+
+
+@media only screen and (max-device-height : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+ .content{
+    height: calc(96vh - 131px);
+}
+
+.showMore{
+  right: 18px;
+  top: 13px;
+}
+.iconmenu{
+    width: 27px;
+    height: 27px;
+
+}
+
+}
+
+@media only screen and (max-device-height : 450px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+
+ .content{
+    height: calc(96vh - 131px);
+}
+
+.showMore{
+  right: 18px;
+  top: 13px;
+}
+.iconmenu{
+    width: 27px;
+    height: 27px;
+
+}
 }
 </style>
