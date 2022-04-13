@@ -3,8 +3,14 @@
 <div class="content">
      <ion-img class="logo" src="../../assets/veg.png"></ion-img>
            <i><h3>VegieTools</h3></i>
+<<<<<<< HEAD
 </div>
 
+=======
+           <!-- <h4>Bitter Gourd and Paria</h4>    -->
+   </div> 
+    
+>>>>>>> 9c4dfee6a7326b26bcd5e7588812150ef27e27b2
 </template>
 
 <script>

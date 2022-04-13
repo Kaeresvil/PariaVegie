@@ -33,7 +33,7 @@ data(){
         content:null,
         1:[
           {
-            title: 'Bitter Gourd',
+            title: 'Description, Nutritive and Variety',
             content:'../workplace/Bitter Gourd/Bitter Gourd Desc'
             },
           {
@@ -68,7 +68,7 @@ data(){
 
             2:[
               {
-            title: 'Paria',
+            title: 'Saguday ti Paria',
             content:'../workplace/Paria/Paria-Desc'
               },
               {
