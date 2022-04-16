@@ -3,14 +3,10 @@
 <div class="content">
      <ion-img class="logo" src="../../assets/veg.png"></ion-img>
            <i><h3>VegieTools</h3></i>
-<<<<<<< HEAD
+           <h4>Bitter Gourd/Paria</h4>
+
 </div>
 
-=======
-           <!-- <h4>Bitter Gourd and Paria</h4>    -->
-   </div> 
-    
->>>>>>> 9c4dfee6a7326b26bcd5e7588812150ef27e27b2
 </template>
 
 <script>
@@ -55,10 +51,11 @@ export default {
   margin-right: auto;
 }
 h3{
-font-size: 78px;
+
+font-size: 68px;
 font-family: 'Barlow Condensed', sans-serif;
 font-weight: 1000;
-color:#000000;
+color: #0c4b05;
 }
 h4{
     font-size: 38px;
@@ -71,9 +68,9 @@ h4{
 Responsive CSS */
 
 
-@media only screen and (max-device-height : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+@media only screen and (max-device-height : 640px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
 .logo{
-  width: 150px;
+  width: 190px;
 
 }
 
@@ -91,9 +88,10 @@ h4{
 }
 }
 
-@media only screen and (min-device-height : 481px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+
+@media only screen and (min-device-height : 1000px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
 .logo{
-  width: 200px;
+ width: 330px;
 
 }
 
@@ -101,98 +99,76 @@ h4{
   top: 28%;
 
 }
+
 h3{
-font-size: 63px;
+font-size: 83px;
 }
 h4{
-    font-size: 28px;
-
+  font-size: 58px;
 }
 
 }
-@media only screen and (min-device-height : 850px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+@media only screen and (min-device-height : 1100px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
 .logo{
-  width: 250px;
+ width: 390px;
 
 }
 
 .content{
-  top: 31%;
+  top: 28%;
 
 }
+
 h3{
-font-size: 72px;
+font-size: 100px;
 }
 h4{
-    font-size: 35px;
-
+  font-size: 58px;
 }
 
 }
-@media screen 
-  and (min-height: 1024px){
+
+
+
+@media only screen and (max-device-height : 369px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
 .logo{
-  width: 300px;
+  width: 125px;
 
 }
 
 .content{
-  top: 27%;
+  top: 20%;
 
 }
+
 h3{
-font-size: 85px;
+font-size: 45px;
 }
 h4{
-    font-size: 45px;
+    font-size: 20px;
 
 }
-
 }
-@media screen 
-  and (min-height: 1180px){
+@media only screen and (max-device-height : 322px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
 .logo{
-  width: 420px;
+  width: 100px;
 
 }
 
 .content{
-  top: 25%;
+  top: 20%;
 
 }
+
 h3{
-font-size: 125px;
+font-size: 40px;
 }
 h4{
-    font-size: 55px;
+    font-size: 17px;
 
 }
-
 }
-@media screen 
-  and (min-height: 1368px){
-.logo{
-  width: 450px;
-
-}
-
-.content{
-  top: 25%;
-
-}
-h3{
-font-size: 125px;
-}
-h4{
-    font-size: 55px;
-
-}
-
-}
-
-/* landscpae responsive */
-
-@media only screen and (max-device-height : 450px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+@media only screen and (min-device-height : 370px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
 .logo{
   width: 150px;
 
@@ -204,10 +180,86 @@ h4{
 }
 
 h3{
-font-size: 48px;
+font-size: 45px;
 }
 h4{
-    font-size: 23px;
+    font-size: 20px;
+
+}
+}
+@media only screen and (min-device-height : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+.logo{
+ width: 190px;
+
+}
+
+.content{
+  top: 20%;
+
+}
+
+h3{
+font-size: 68px;
+}
+h4{
+    font-size: 38px;
+
+}
+}
+@media only screen and (min-device-height : 520px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+.logo{
+ width: 255px;
+
+}
+
+.content{
+  top: 20%;
+
+}
+
+h3{
+font-size: 58px;
+}
+h4{
+    font-size: 28px;
+
+}
+}
+@media only screen and (min-device-height : 570px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+.logo{
+ width: 255px;
+
+}
+
+.content{
+  top: 20%;
+
+}
+
+h3{
+font-size: 60px;
+}
+h4{
+    font-size: 32px;
+
+}
+}
+@media only screen and (min-device-height : 670px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+.logo{
+ width: 335px;
+
+}
+
+.content{
+  top: 20%;
+
+}
+
+h3{
+font-size: 78px;
+}
+h4{
+    font-size: 40px;
 
 }
 }

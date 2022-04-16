@@ -112,7 +112,7 @@ h6{
 }
 .breadcrumbs{
   color: black;
-  font-weight:500;
+  font-weight:700;
   font-size: 13px;
    width: 100%;
    padding: 7px 0 0 0;
@@ -152,6 +152,22 @@ Responsive CSS */
     width: 27px;
     height: 27px;
 
+}
+
+}
+
+
+
+@media only screen and (min-device-height : 741px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+ .content{
+    height: calc(96vh - 151px);
+}
+
+}
+
+@media only screen and (min-device-height : 952px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+ .content{
+    height: calc(96vh - 138px);
 }
 
 }

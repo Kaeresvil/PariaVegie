@@ -6,7 +6,7 @@
             </div>  <!--end of logohead -->
 
              <div>
-             <h6>Bitter Gourd/Paria</h6>
+             <h6>VegieTools</h6>
              </div>
        </div><!-- end of header div -->
        <div class="liner">
