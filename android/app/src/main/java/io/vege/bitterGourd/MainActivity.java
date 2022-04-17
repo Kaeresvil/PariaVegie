@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package io.vege.bitterGourd;
 
 import com.getcapacitor.BridgeActivity;
 

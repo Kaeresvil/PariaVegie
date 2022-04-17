@@ -34,66 +34,62 @@ data(){
         1:[
           {
             title: 'Description, Nutritive and Variety',
-            content:'../workplace/Bitter Gourd/Bitter Gourd Desc'
+            content:'../workplace/Bitter Gourd/BitterGourd'
             },
           {
             title:'Land Preparation and Crop Establishment ',
-            content:'../workplace/Bitter Gourd/Land-Preparation-and-Crop-Establishment'
+            content:'../workplace/Bitter Gourd/LandPreparationandCropEstablishment'
             },
           {
             title:'Integrated Nutrient and Water Management',
-            content:'../workplace/Bitter Gourd/Integrated Nutrient'
+            content:'../workplace/Bitter Gourd/IntegratedandWaterManagement'
             },
           {
            title:'Integrated Pest Management',
-            content:'../workplace/Bitter Gourd/Integrated-Pest-Management'
+            content:'../workplace/Bitter Gourd/IntegratedPestManagement'
             },
           {
              title:'Disease Management',
-              content:'../workplace/Bitter Gourd/Disease-Management'
-            },
-          {
-             title:'Weed Management',
-              content:'../workplace/Bitter Gourd/Weed-management'
+              content:'../workplace/Bitter Gourd/DiseaseManagement'
             },
           {
              title:'Harvesting and Post-harvest Handling',
-            content:'../workplace/Bitter Gourd/Harvesting-and-Postharvest-handling'
+            content:'../workplace/Bitter Gourd/HarvestingandPostHarvestHandling'
             },
           {
-             title:'Pre-Test/Self-Test',
-             content:'../workplace/Bitter Gourd/Bitter-gourd-pre-test'
+             title:'Self-Test',
+             content:'../workplace/Bitter Gourd/Bittergourdpretest'
             },
             ],
 
             2:[
               {
             title: 'Saguday ti Paria',
-            content:'../workplace/Paria/Paria-Desc'
+            content:'../workplace/Paria/Paria'
               },
               {
             title:'Panaggisagana iti Pagmulaan ken Wagas ti Panagmula',
-            content:'../workplace/Paria/Panangisagana-iti-Pagmulaan-ken-Wagas-ti-Panagmula'
+            content:'../workplace/Paria/PanangisaganaitiPagmulaankenWagastiPanagmula'
             },
               {
             title:'Panagganagan ken Panagpadanum',
-            content:'../workplace/Paria/Panagganagan-ken-Panagpadanum'
+            content:'../workplace/Paria/PanagganagankenPanagpadanum'
             },
               {
             title:'Panangmanehar kadagiti Peste',
-            content:'../workplace/Paria/Panangmanehar-kadagiti-Peste'
+            content:'../workplace/Paria/PanangmaneharkadagitiPeste'
             },
               {
             title:'Panagmanehar iti Sakit',
-            content:'../workplace/Paria/Panagmanehar-iti-Sakit'
+            content:'../workplace/Paria/PanagmaneharitiSakit'
             },
              {
             title:'Panangtariwidwid Kadagti Ruot',
-            content:'../workplace/Paria/Panangtarawidwid-Kadagiti-Ruot'
+            content:'../workplace/Paria/PanangtarawidwidKadagitiRuot'
             },
               {
             title:'Panagapit ken Panangtaming iti Apit',
-            content:'../workplace/Paria/Panagapit-ken-Panangtaming-iti-Apit'
+            content:'../workplace/Paria/PanagapitkenPanangtamingitiApit'
             },
         
             ],

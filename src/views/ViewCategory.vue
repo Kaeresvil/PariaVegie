@@ -29,7 +29,7 @@ export default defineComponent({
   data(){
      if(this.language){
     return{
-          content: '../workplace/Bitter Gourd/Bitter Gourd Desc',
+          content: '../workplace/Bitter Gourd/BitterGourd',
           vegetableName: 'Bitter Gourd',
           breadcrumbs: 'Description, Nutritive and Variety',
           showMore: true,
@@ -41,7 +41,7 @@ export default defineComponent({
        }
     }else  if(!this.language){
     return{
-          content: '../workplace/Paria/Paria-Desc',
+          content: '../workplace/Paria/Paria',
           vegetableName: 'Paria',
           breadcrumbs: 'Saguday ti Paria',
           showMore: true,
@@ -96,7 +96,7 @@ methods: {
   background-color: #f7f7f7e3;
   color: rgb(3, 3, 3);
   width: 95%;
-  height: 1.75rem;
+  height: auto;
   transform: translate(+2.5%, +5px);
   margin-bottom: 10px;   
   
@@ -113,9 +113,9 @@ h6{
 .breadcrumbs{
   color: black;
   font-weight:700;
-  font-size: 13px;
+  font-size: 14px;
    width: 100%;
-   padding: 7px 0 0 0;
+   padding: 6px 0 6px 0;
 }
 
 #h5p-container{

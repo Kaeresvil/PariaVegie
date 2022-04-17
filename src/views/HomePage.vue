@@ -199,7 +199,7 @@ h1{
 }
 h6{
     font-family: 'Bebas Neue', sans-serif;
-   font-size: 18px;
+   font-size: 22px;
    color:rgb(255, 255, 255);
    text-align: center;
    font-weight:800;
